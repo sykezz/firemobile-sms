@@ -1,0 +1,32 @@
+{
+	"name": "sykez/firemobile-sms",
+	"description": "Fire Mobile SMS Channel for Laravel.",
+	"license": "MIT",
+	"keywords": ["fire-mobile", "laravel", "sms", "channel", "notification"],
+	"homepage": "https://github.com/sykezz/firemobile-sms",
+    "require": {
+		"php": "^7.2",
+		"guzzlehttp/guzzle": "^6.3",
+        "illuminate/notifications": "~5.7",
+        "illuminate/support": "~5.7"
+    },
+    "authors": [
+        {
+            "name": "sykez",
+            "email": "hello@sykez.com"
+        }
+    ],
+	"minimum-stability": "dev",
+	"autoload": {
+        "psr-4": {
+            "Sykez\\FireMobileSms\\": "src/"
+        }
+    },
+	"extra": {
+        "laravel": {
+            "providers": [
+                "Sykez\\FireMobileSms\\ServiceProvider"
+            ]
+        }
+    }
+}
